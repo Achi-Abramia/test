@@ -24,7 +24,8 @@ ul {
     font-family: "playfair";
 }
 
-.my-work {
+.my-work,
+.box-date {
     font-family: "montserrat-regular";
 }
 
@@ -66,20 +67,9 @@ ul {
 
 .logo-header { 
     display: flex;
-    width: 75px;
-    height: 74px;
     gap: 13px;
     margin-left: 30px;
 }
-/* 
-a,.txt-header { 
-    text-decoration: none;
-    color: #888888;
-}
-
-li { 
-    list-style: none;
-} */
 
 .image { 
     display: flex;
@@ -88,28 +78,19 @@ li {
     height: 50px;
 }
 
+.slider-width {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 850px;
+}
+
  .slider::after { 
     content: "";
     width: 220px;
     height: 4px;
     display: block;
     background-color: #D6A091;
-    margin-left: 78.5%;
     margin-top: 110px;
-}
-
-.boxs { 
-    /* border: 1px;
-    background-color: #AAAAAA;
-    width: 1300px;
-    height: 400px; 
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px; 
-*/
 }
 
 .brilliant-txt { 
@@ -121,7 +102,6 @@ li {
 
 .my-work { 
     font-size: 10px;
-    font-family: Montserrat;
     font-size: 28px;
     letter-spacing: 2.79px;
     text-align: center;
@@ -148,11 +128,9 @@ li {
 }
 
 .main-container { 
-    max-width: 1300px;
-    height: 1000px;
-    border: 1px;
+    max-width: 1100px;
+    height: 100px;
     background-color: #AAAAAA;
-    width: 1300px;
     height: 400px; 
     margin: 0 auto;
     display: flex;
@@ -171,43 +149,37 @@ li {
     gap: 35px;
     padding-top: 100px;
     padding-bottom: 100px;
-    max-width: 1300px;
+    max-width: 1100px;
     height: 1000px;
 }
 
-.item { 
+.box-date {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.grid-box { 
     background-color: #AAAAAA;
-    color: white;
     display: flex;
     align-items: center;
-    min-height: 130px;
     justify-content: center;
-    font-size: large;
     flex-direction: column;
-    font-family: "Playfair";
     letter-spacing: -1.1px;
 }
 
-.below { 
-    display: flex;
-    display: flex;
-    align-items: center;
-    min-height: 130px;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    font-family: "playfair";
+.names {
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: -1.1px;
+    line-height: 80px;
 }
 
-.line::after { 
+.box-date::after {
+    background-color: red;
     content: "";
-    width: 23px;
-    height: 4px;
-    display: inline-block;
-    background-color: #FFFFFF80;
-    margin-bottom: 70px;
-}
-
-.top {
-    margin-bottom: 150px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
 }
