@@ -157,6 +157,7 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 180px;
+    margin: 0 auto;
 }
 
 .grid-box { 
@@ -175,11 +176,12 @@ ul {
     line-height: 80px;
 }
 
-.box-date::after {
-    background-color: red;
-    content: "";
+.grid-box-underline::after {
     display: block;
+    content: "";
     width: 20px;
-    height: 20px;
-    margin-top: 10px;
+    height: 4px;
+    background-color: #FFFFFF80;
+    margin: 0 auto;
+    margin-top: 20px;
 }
